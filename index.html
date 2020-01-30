@@ -28,7 +28,15 @@
                 <a class="nav-link" type="button" id="heder-en">en</a>
             </li>
             <li class="nav-item">
-              <div class="nav-link"><i class="fas fa-bars"></i></div>
+              <a class="nav-link" id="menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#plus">- Почему мы</a>
+                <a class="dropdown-item" href="#services">- Мы Делаем</a>
+                <a class="dropdown-item" href="#work">- Процесс</a>
+                <a class="dropdown-item" href="#portfolio">- Наши Работы</a>
+                <a class="dropdown-item" href="#test">- Отзывы</a>
+                <a class="dropdown-item" href="#contact">- Контакты</a>
+              </div>
             </li>
         </ul>
     </div>
@@ -47,7 +55,7 @@
         </div>
        </div>
         <div class="text-center">
-            <button type="button" class="btn btn-primary btn-lg" >Заказать сайт</button>
+            <button type="button" class="btn btn-primary btn-lg" id="order-site" >Заказать сайт</button>
          </div>
     <div class="text-center" id="bottom-p">
          <p>Листайте дальше</p>
@@ -55,38 +63,38 @@
    </div>
 </header>
 
-<div class="plus">
+<div class="plus" id="plus">
     <div class="text-center">
        <h2>ПОЧЕМУ МЫ</h2>
     </div>
     <div class="row justify-content-center" id="row-global">
        <div class="col-3" id="plus-col-3">
- <div class="row" id="plus-01" isActive='false' > 
+ <div class="row" id="plus-01" > 
     <p class="number">01</p>
     <i class="fas fa-minus"></i>
     <div class="width-p" >
-    <p class="hedline">Адаптивный дизайн</p>
+    <a class="hedline" type="button">Адаптивный дизайн</a>
     </div>
 </div> 
-<div class="row" id="plus-02" isActive='false' > 
+<div class="row" id="plus-02" > 
     <p class="number">02</p>
     <i class="fas fa-minus"></i>
     <div class="width-p" >
-    <p class="hedline">Внутренняя SEO оптимизация</p>
+    <a class="hedline" type="button">Внутренняя SEO оптимизация</a>
     </div>
 </div>
-<div class="row" id="plus-03" isActive='false' > 
+<div class="row" id="plus-03" > 
     <p class="number">03</p>
     <i class="fas fa-minus"></i>
     <div class="width-p" >
-    <p class="hedline">Инструменты маркетинга</p>
+    <a class="hedline" type="button">Инструменты маркетинга</a>
     </div>
 </div>
-<div class="row" id="plus-04" isActive='false' > 
+<div class="row" id="plus-04" > 
     <p class="number">04</p>
     <i class="fas fa-minus"></i>
     <div class="width-p" >
-    <p class="hedline">Заботливая тех. поддержка</p>
+    <a class="hedline" type="button">Заботливая тех. поддержка</a>
     </div>
 </div>
         </div>
@@ -109,7 +117,7 @@
     </div>
  </div>
 
- <div class="services">
+ <div class="services" id="services">
     <div class="text-center">
        <h2>МЫ ДЕЛАЕМ</h2>
     </div>
@@ -151,7 +159,7 @@
            </div>
        </div>
     </div>
-    <div class="work">
+    <div class="work" id="work">
        <div class="text-center">
            <h2>ПРОЦЕСС</h2>
         </div>
@@ -250,7 +258,7 @@
     </div>
 </div>
 
-<div class="portfolio">
+<div class="portfolio" id="portfolio">
     <div class="text-center">
         <h2>НАШИ РАБОТЫ</h2>
      </div>
@@ -277,7 +285,7 @@
      </div>
 </div>
 
-<div class="test">
+<div class="test" id="test">
     <div class="text-center">
         <h2>ЧТО ГОВОРЯТ</h2>
     </div>
@@ -315,7 +323,7 @@
      </div>
  </div>
 
- <div class="contact">
+ <div class="contact" id="contact">
     <div class="text-center">
         <h2>Связатся с нами</h2>
     </div>
@@ -376,6 +384,7 @@
          </div>
          <div class="futer"></div>
  </div>
+
 <script src='./js/main.js'></script>
 </body>
 </html>
