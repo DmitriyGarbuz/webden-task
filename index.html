@@ -1,390 +1,408 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/6127cd2977.js" crossorigin="anonymous"></script>
- 
+
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
+
 <body>
-<header class="header">
-  <div class="row justify-content-center" >
-     <div class="col-2"> 
-          <img src='./img/logo.png' alt="logo"/>
-     </div>
-    <div class="col-4"></div>
-    <div class="col-2">
-    <div class="row" id="mob-row">
-       <ul class="nav">
-           <li class="nav-item">
-              <a class="nav-link" type="button" id="heder-ru">ru</a>
-           </li>
-            <li class="nav-item">
-                <a class="nav-link" type="button" id="heder-en">en</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#plus">- Почему мы</a>
-                <a class="dropdown-item" href="#services">- Мы Делаем</a>
-                <a class="dropdown-item" href="#work">- Процесс</a>
-                <a class="dropdown-item" href="#portfolio">- Наши Работы</a>
-                <a class="dropdown-item" href="#test">- Отзывы</a>
-                <a class="dropdown-item" href="#contact">- Контакты</a>
-              </div>
-            </li>
-        </ul>
-    </div>
-  </div>
-  </div>
-   <div class="container">
-      <div class="text-center">
-         <h1>DEVELOPMENT AND PROMOTION BY <b>YOU-STUDIO</b></h1>
-      </div>
-      <div class="text-center">
-       <div class="input-group mb-3">
-           <input type="text" class="form-control" placeholder="Создать сайт..." aria-label="Создать сайт..." aria-describedby="button-addon2"/>
-            <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+    <header class="header">
+        <div class="row justify-content-center">
+            <div class="col-2">
+                <img src='./img/logo.png' alt="logo" />
+            </div>
+            <div class="col-4"></div>
+            <div class="col-2">
+                <div class="row" id="mob-row">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" type="button" id="heder-ru">ru</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" type="button" id="heder-en">en</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="menu" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"><i class="fas fa-bars"></i></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#plus">- Почему мы</a>
+                                <a class="dropdown-item" href="#services">- Мы Делаем</a>
+                                <a class="dropdown-item" href="#work">- Процесс</a>
+                                <a class="dropdown-item" href="#portfolio">- Наши Работы</a>
+                                <a class="dropdown-item" href="#test">- Отзывы</a>
+                                <a class="dropdown-item" href="#contact">- Контакты</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-       </div>
+        <div class="container">
+            <div class="text-center">
+                <h1>DEVELOPMENT AND PROMOTION BY <b>YOU-STUDIO</b></h1>
+            </div>
+            <div class="text-center">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Создать сайт..." aria-label="Создать сайт..."
+                        aria-describedby="button-addon2" />
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                                class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary btn-lg" id="order-site">Заказать сайт</button>
+            </div>
+            <div class="text-center" id="bottom-p">
+                <p>Листайте дальше</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="plus" id="plus">
         <div class="text-center">
-            <button type="button" class="btn btn-primary btn-lg" id="order-site" >Заказать сайт</button>
-         </div>
-    <div class="text-center" id="bottom-p">
-         <p>Листайте дальше</p>
-     </div>
-   </div>
-</header>
-
-<div class="plus" id="plus">
-    <div class="text-center">
-       <h2>ПОЧЕМУ МЫ</h2>
-    </div>
-    <div class="row justify-content-center" id="row-global">
-       <div class="col-3" id="plus-col-3">
- <div class="row" id="plus-01" > 
-    <p class="number">01</p>
-    <i class="fas fa-minus"></i>
-    <div class="width-p" >
-    <a class="hedline" type="button">Адаптивный дизайн</a>
-    </div>
-</div> 
-<div class="row" id="plus-02" > 
-    <p class="number">02</p>
-    <i class="fas fa-minus"></i>
-    <div class="width-p" >
-    <a class="hedline" type="button">Внутренняя SEO оптимизация</a>
-    </div>
-</div>
-<div class="row" id="plus-03" > 
-    <p class="number">03</p>
-    <i class="fas fa-minus"></i>
-    <div class="width-p" >
-    <a class="hedline" type="button">Инструменты маркетинга</a>
-    </div>
-</div>
-<div class="row" id="plus-04" > 
-    <p class="number">04</p>
-    <i class="fas fa-minus"></i>
-    <div class="width-p" >
-    <a class="hedline" type="button">Заботливая тех. поддержка</a>
-    </div>
-</div>
+            <h2>ПОЧЕМУ МЫ</h2>
         </div>
-        <div class="col-5">
-            <div class="row justify-content-end">
-                <i class="fas fa-angle-left"></i>
-                <p class="nav">01/04</p>
-                <i class="fas fa-angle-right"></i>
+        <div class="row justify-content-center" id="row-global">
+            <div class="col-3" id="plus-col-3">
+                <div class="row" id="plus-01">
+                    <p class="number">01</p>
+                    <i class="fas fa-minus"></i>
+                    <div class="width-p">
+                        <a class="hedline" type="button">Адаптивный дизайн</a>
+                    </div>
+                </div>
+                <div class="row" id="plus-02">
+                    <p class="number">02</p>
+                    <i class="fas fa-minus"></i>
+                    <div class="width-p">
+                        <a class="hedline" type="button">Внутренняя SEO оптимизация</a>
+                    </div>
+                </div>
+                <div class="row" id="plus-03">
+                    <p class="number">03</p>
+                    <i class="fas fa-minus"></i>
+                    <div class="width-p">
+                        <a class="hedline" type="button">Инструменты маркетинга</a>
+                    </div>
+                </div>
+                <div class="row" id="plus-04">
+                    <p class="number">04</p>
+                    <i class="fas fa-minus"></i>
+                    <div class="width-p">
+                        <a class="hedline" type="button">Заботливая тех. поддержка</a>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-               <div class="col-3">
-                  <img src='./img/pc.png' alt="pc"></img>
-               </div>
-               <div class="col-sm">
-                  <p class="hedline">Адаптивный дизайн</p>
-                  <p>Мы стали более занятыми, но потребность в информации не исчезла. Поэтому мы все чаще используем портативные устройства такие как телефоны или планшеты. И конечно уже не для кого не секрет что сайт обязательно должен быть адаптивен для всех экранов, иначе это не сайт, но хотелось бы так же подчеркнуть, что сайт должен быть быстрым что бы загрузиться на 2g.</p>
-               </div>           
+            <div class="col-5">
+                <div class="row justify-content-end">
+                    <i class="fas fa-angle-left" id="plus-prev"></i>
+                    <p class="nav">01/04</p>
+                    <i class="fas fa-angle-right" id="plus-next"></i>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img src='./img/pc.png' alt="pc"></img>
+                    </div>
+                    <div class="col-sm">
+                        <p class="hedline">Адаптивный дизайн</p>
+                        <p>Мы стали более занятыми, но потребность в информации не исчезла. Поэтому мы все чаще
+                            используем портативные устройства такие как телефоны или планшеты. И конечно уже не для кого
+                            не секрет что сайт обязательно должен быть адаптивен для всех экранов, иначе это не сайт, но
+                            хотелось бы так же подчеркнуть, что сайт должен быть быстрым что бы загрузиться на 2g.</p>
+                    </div>
+                </div>
             </div>
-       </div>
+        </div>
     </div>
- </div>
 
- <div class="services" id="services">
-    <div class="text-center">
-       <h2>МЫ ДЕЛАЕМ</h2>
+    <div class="services" id="services">
+        <div class="text-center">
+            <h2>МЫ ДЕЛАЕМ</h2>
+        </div>
+        <div class="container">
+            <div class="row" id="services-row">
+                <div class="col-6" id="services-01">
+                    <div class="row">
+                        <i class="fas fa-plus-circle" id="services-plus-circle"></i>
+                        <p>Разработка сайтов</p>
+                    </div>
+                </div>
+                <div class="col-6" id="services-02">
+                    <div class="row">
+                        <i class="fas fa-plus-circle"></i>
+                        <p>Дизайн</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="seo">
+                <div class="row justify-content-between" id="seo-row">
+                    <div class="row">
+                        <i class="fas fa-times-circle"></i>
+                        <p>SEO продвижение</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary">Сделать заказ</button>
+                </div>
+                <div class="row" id="seo-row2">
+                    <div class="col-sm">
+                        <p class="seo-hedline">Почему:</p>
+                        <p>— Используем комплексные решения (SEO, SMM, A/B)</p>
+                        <p>— Анализируем и обходим конкурентов</p>
+                        <p>— Подготовим план продвижения соответствующий Вашему бюджету</p>
+                    </div>
+                    <div class="col-sm">
+                        <p class="seo-hedline">Зачем:</p>
+                        <p>Предоставьте возможность миру узнать о Вашем товаре/услуге</p>
+                        <p>Ваш бренд имеет возможность стать знаменитым, а сайт прибыльным</p>
+                    </div>
+                    <div class="col-sm">
+                        <p class="seo-hedline">Сколько:</p>
+                        <p>Цена для каждого проекта обсуждается индивидуально</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work" id="work">
+            <div class="text-center">
+                <h2>ПРОЦЕСС</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-2">
+                    <div class="row justify-content-between">
+                        <p class="hedline">Заявка</p>
+                        <hr>
+                        </hr>
+                        <p class="number">01</p>
+                    </div>
+                    <p>Таким образом начало повседневной работы по формированию позиции позволяет оценить значение
+                        позиций</p>
+                </div>
+                <div class="col-1">
+                    <label class="container-elipse">
+                        <input type="radio" checked="checked" name="radio" />
+                        <span class="checkmark-elipse"></span>
+                    </label>
+                    <hr />
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
     </div>
-    <div class="container">
-       <div class="row" id="services-row">
-          <div class="col-6" id="services-01"><div class="row">
-          <i class="fas fa-plus-circle" id="services-plus-circle"></i>
-          <p>Разработка сайтов</p>
-              </div></div>
-          <div class="col-6" id="services-02"><div class="row">
-          <i class="fas fa-plus-circle"></i>
-          <p>Дизайн</p>
-          </div></div>
-       </div>
-       <div class="container" id="seo">
-           <div class="row justify-content-between" id="seo-row">
-               <div class="row" >
-               <i class="fas fa-times-circle"></i>
-               <p>SEO продвижение</p>
-               </div>              
-               <button type="button" class="btn btn-outline-secondary">Сделать заказ</button>
-           </div>
-           <div class="row" id="seo-row2">
-               <div class="col-sm">
-                   <p class="seo-hedline">Почему:</p>
-                   <p>—  Используем комплексные решения (SEO, SMM, A/B)</p>
-                   <p>—  Анализируем и обходим конкурентов</p>
-                   <p>—  Подготовим план продвижения соответствующий Вашему бюджету</p>
-               </div>
-               <div class="col-sm">
-                   <p class="seo-hedline">Зачем:</p>
-                   <p>Предоставьте возможность миру узнать о Вашем товаре/услуге</p>
-                   <p>Ваш бренд имеет возможность стать знаменитым, а сайт прибыльным</p>
-               </div>
-               <div class="col-sm">
-                   <p class="seo-hedline">Сколько:</p>
-                   <p>Цена для каждого проекта обсуждается индивидуально</p>
-               </div>
-           </div>
-       </div>
-    </div>
-    <div class="work" id="work">
-       <div class="text-center">
-           <h2>ПРОЦЕСС</h2>
+
+    <div class="work-2">
+        <div class="row justify-content-center" id="row-work-2">
+            <div class="col-2">
+            </div>
+            <div class="col-1">
+                <label class="container-elipse">
+                    <input type="radio" checked="" name="radio" />
+                    <span class="checkmark-elipse"></span>
+                </label>
+                <hr />
+            </div>
+            <div class="col-2">
+                <div class="row justify-content-between">
+                    <p class="number">02</p>
+                    <p class="hedline" id="hedline-two">Техническое задание</p>
+                </div>
+            </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-2">
                 <div class="row justify-content-between">
-                    <p class="hedline">Заявка</p>
-                    <hr></hr>
-                    <p class="number">01</p>
+                    <p class="hedline">Разработка</p>
+                    <p class="number">03</p>
                 </div>
-                <p>Таким образом начало повседневной работы по формированию позиции позволяет оценить значение позиций</p>
             </div>
             <div class="col-1">
-            <label class="container-elipse">
-   <input type="radio" checked="checked" name="radio"/>
-   <span class="checkmark-elipse"></span>
- </label>
- <hr/>
+                <label class="container-elipse">
+                    <input type="radio" checked="" name="radio" />
+                    <span class="checkmark-elipse"></span>
+                </label>
+                <hr />
             </div>
-            <div class="col-2"></div>
-        </div>
-    </div>
- </div>
-
-<div class="work-2">
-    <div class="row justify-content-center" id="row-work-2">
-        <div class="col-2">
-        </div>
-        <div class="col-1">
-        <label class="container-elipse">
-           <input type="radio" checked="" name="radio"/>
-            <span class="checkmark-elipse"></span>
-            </label>
-            <hr/>
-        </div>
-        <div class="col-2">
-        <div class="row justify-content-between">
-                <p class="number">02</p>   
-                <p class="hedline" id="hedline-two">Техническое задание</p>
+            <div class="col-2">
             </div>
         </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-2">
-        <div class="row justify-content-between">
-                <p class="hedline">Разработка</p>
-                <p class="number">03</p>
+        <div class="row justify-content-center">
+            <div class="col-2">
             </div>
-        </div>
-        <div class="col-1">
-        <label class="container-elipse">
-           <input type="radio" checked="" name="radio"/>
-            <span class="checkmark-elipse"></span>
-            </label>
-            <hr/>
-        </div>
-        <div class="col-2">
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-2">
-        </div>
-        <div class="col-1">
-        <label class="container-elipse">
-           <input type="radio" checked="" name="radio"/>
-            <span class="checkmark-elipse"></span>
-            </label>
-            <hr/>
-        </div>
-        <div class="col-2">
-        <div class="row justify-content-between">
-                <p class="number">04</p>
-                <p class="hedline">Продвижение</p>
+            <div class="col-1">
+                <label class="container-elipse">
+                    <input type="radio" checked="" name="radio" />
+                    <span class="checkmark-elipse"></span>
+                </label>
+                <hr />
             </div>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-2">
-        <div class="row justify-content-between">
-                <p class="hedline">Поддержка</p>
-                <p class="number">05</p>
-            </div>
-        </div>
-        <div class="col-1">
-        <hr id="last-line"/>
-        <label class="container-elipse" id="last-input">
-           <input type="radio" checked="" name="radio"/>
-            <span class="checkmark-elipse"></span>
-            </label>
-        </div>
-        <div class="col-2">
-        </div>
-    </div> 
-    <div class="text-center">
-    <img id="work-back-image" src='./img/Back-Work.png' alt="back-work"></img>
-    </div>
-</div>
-
-<div class="portfolio" id="portfolio">
-    <div class="text-center">
-        <h2>НАШИ РАБОТЫ</h2>
-     </div>
-     <div class="row justify-content-center">
-     <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">UI/UX</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">BRANDING</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">РАЗРАБОТКА</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">ПРОДВИЖЕНИЕ</a>
-        </li>
-      </ul>
-     </div>
-     <div class="row justify-content-center">
-         <div class="container">
-        <img src='./img/gallery.jpg' alt="gallery"></img>
-        </div>
-     </div>
-</div>
-
-<div class="test" id="test">
-    <div class="text-center">
-        <h2>ЧТО ГОВОРЯТ</h2>
-    </div>
-    <div class="text-center">
-       <img src='./img/test-1.png' alt="after-h2" id="test-after-h2"></img>
-    </div>
-     <div class="row justify-content-center" id="test-global-row">
-        <img src='./img/arow-left.png' alt="arow-left" class="arow"></img>
-        <div class="col-5" id="test-div-col-5">
-            <div class="row" id="test-mob-row">
-                <div class="col-3">
-                    <img src='./img/test-ava.png' alt="ava"></img>
-                    <div class="row" id="facebook">
-                        <i class="fab fa-facebook-f"></i>
-                        <p>Facebook</p>
-                    </div>
-                    <p>Источник отзыва</p>
+            <div class="col-2">
+                <div class="row justify-content-between">
+                    <p class="number">04</p>
+                    <p class="hedline">Продвижение</p>
                 </div>
-                <div class="col-sm">
-                    <p class="test-hedline">Екатерина Михайлова</p>
-                    <p class="test-after">Компания EveryDay, HR-Менеджер</p>
-                    <p>Повседневная практика показывает, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны новая модель организационной деятельности влечет за собой процесс внедрения.</p>
-                    <div class="row justify-content-end">
-                        <img src='./img/test-one.png' alt="test-one"></img>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2">
+                <div class="row justify-content-between">
+                    <p class="hedline">Поддержка</p>
+                    <p class="number">05</p>
+                </div>
+            </div>
+            <div class="col-1">
+                <hr id="last-line" />
+                <label class="container-elipse" id="last-input">
+                    <input type="radio" checked="" name="radio" />
+                    <span class="checkmark-elipse"></span>
+                </label>
+            </div>
+            <div class="col-2">
+            </div>
+        </div>
+        <div class="text-center">
+            <img id="work-back-image" src='./img/Back-Work.png' alt="back-work"></img>
+        </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="text-center">
+            <h2>НАШИ РАБОТЫ</h2>
+        </div>
+        <div class="row justify-content-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">UI/UX</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BRANDING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">РАЗРАБОТКА</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ПРОДВИЖЕНИЕ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="row justify-content-center">
+            <div class="container">
+                <img src='./img/gallery.jpg' alt="gallery"></img>
+            </div>
+        </div>
+    </div>
+
+    <div class="test" id="test">
+        <div class="text-center">
+            <h2>ЧТО ГОВОРЯТ</h2>
+        </div>
+        <div class="text-center">
+            <img src='./img/test-1.png' alt="after-h2" id="test-after-h2"></img>
+        </div>
+        <div class="row justify-content-center" id="test-global-row">
+            <img src='./img/arow-left.png' alt="arow-left" class="arow"></img>
+            <div class="col-5" id="test-div-col-5">
+                <div class="row" id="test-mob-row">
+                    <div class="col-3">
+                        <img src='./img/test-ava.png' alt="ava"></img>
+                        <div class="row" id="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <p>Facebook</p>
+                        </div>
+                        <p>Источник отзыва</p>
+                    </div>
+                    <div class="col-sm">
+                        <p class="test-hedline">Екатерина Михайлова</p>
+                        <p class="test-after">Компания EveryDay, HR-Менеджер</p>
+                        <p>Повседневная практика показывает, что рамки и место обучения кадров обеспечивает широкому
+                            кругу (специалистов) участие в формировании новых предложений. С другой стороны новая модель
+                            организационной деятельности влечет за собой процесс внедрения.</p>
+                        <div class="row justify-content-end">
+                            <img src='./img/test-one.png' alt="test-one"></img>
+                        </div>
                     </div>
                 </div>
-            </div>         
+            </div>
+            <img src='./img/arow-right.png' alt="arow-right" class="arow"></img>
         </div>
-        <img src='./img/arow-right.png' alt="arow-right" class="arow"></img>
-     </div>
-     <div class="row justify-content-center">
-         <div class="col-5">
-             <div class="row" id="bottom-div"></div>
-         </div>
-     </div>
- </div>
-
- <div class="contact" id="contact">
-    <div class="text-center">
-        <h2>Связатся с нами</h2>
+        <div class="row justify-content-center">
+            <div class="col-5">
+                <div class="row" id="bottom-div"></div>
+            </div>
+        </div>
     </div>
-         <div class="row justify-content-center" id="contact-row">
-              <div class="col-4">
-                  <p class="hedline">Контакты</p>
-                  <p >E-MAIL:</p>
-                  <p>touch@webden-studio.com</p>
-                  <div class="row justify-content-start" id="mob-contact-tel">
-                      <div class="col">
-                          <p>Телефон:</p>
-                          <p>+38 063 863 97 49</p>
-                      </div>
-                      <div class="col">   
-                          <p>Наш Skype:</p>
-                          <div class="row">
-                          <i class="fab fa-skype"></i>
-                              <p>webdenisenko</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row justify-content-between" id="net-row">
-                      <div class="col-sm">
-                      <p class="hedline">Социальные Сети</p>
-                      </div>
-                      <div class="col-sm ">
-                          <div class="row justify-content-between">
-                      <i class="fab fa-vk"></i>
-                      <i class="fab fa-facebook-f"></i>
-                      <i class="fab fa-twitter"></i>
-                      <i class="fas fa-basketball-ball"></i>
-                      <i class="fab fa-behance"></i>
-                      <i class="fab fa-instagram"></i>
-                      </div>
-                      </div>
-                  </div>
-                  <p class="text-small">© Webden-Studio 2017. Все права защищены</p>
-              </div>
- 
-              <div class="col-4" id="form-right">
-                  <div class="row">
-                      <div class="col-sm">
-                      <input class="form-control" type="text" placeholder="Имя"/>
-                      </div>
-                      <div class="col-sm">
-                      <input class="form-control" type="text" placeholder="Телефон или e-mail"/>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-sm">
-                      <input class="form-control" type="text" placeholder="Сообщение"/>
-                      </div>
-                  </div>
-                  <div class="row justify-content-end">
-                      <button type="button" class="btn btn-primary btn-lg">Отправить</button>
-                      </div>
-              </div>
-         </div>
-         <div class="futer"></div>
- </div>
 
-<script src='./js/main.js'></script>
+    <div class="contact" id="contact">
+        <div class="text-center">
+            <h2>Связатся с нами</h2>
+        </div>
+        <div class="row justify-content-center" id="contact-row">
+            <div class="col-4">
+                <p class="hedline">Контакты</p>
+                <p>E-MAIL:</p>
+                <p>touch@webden-studio.com</p>
+                <div class="row justify-content-start" id="mob-contact-tel">
+                    <div class="col">
+                        <p>Телефон:</p>
+                        <p>+38 063 863 97 49</p>
+                    </div>
+                    <div class="col">
+                        <p>Наш Skype:</p>
+                        <div class="row">
+                            <i class="fab fa-skype"></i>
+                            <p>webdenisenko</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between" id="net-row">
+                    <div class="col-sm">
+                        <p class="hedline">Социальные Сети</p>
+                    </div>
+                    <div class="col-sm ">
+                        <div class="row justify-content-between">
+                            <i class="fab fa-vk"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fas fa-basketball-ball"></i>
+                            <i class="fab fa-behance"></i>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-small">© Webden-Studio 2017. Все права защищены</p>
+            </div>
+
+            <div class="col-4" id="form-right">
+                <div class="row">
+                    <div class="col-sm">
+                        <input class="form-control" type="text" placeholder="Имя" />
+                    </div>
+                    <div class="col-sm">
+                        <input class="form-control" type="text" placeholder="Телефон или e-mail" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <input class="form-control" type="text" placeholder="Сообщение" />
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <button type="button" class="btn btn-primary btn-lg">Отправить</button>
+                </div>
+            </div>
+        </div>
+        <div class="futer"></div>
+    </div>
+
+    <script src='./js/main.js'></script>
 </body>
+
 </html>

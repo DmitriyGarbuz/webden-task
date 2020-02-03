@@ -101,5 +101,91 @@ plus01.querySelector(".hedline").addEventListener('click', changeActive);
 plus02.querySelector(".hedline").addEventListener('click', changeActive); 
 plus03.querySelector(".hedline").addEventListener('click', changeActive); 
 plus04.querySelector(".hedline").addEventListener('click', changeActive); 
+let plusPrev = document.querySelector('#plus-prev');
+let plusNext = document.querySelector('#plus-next');
+prevPlus = () => {
+  let plus = document.querySelector('#plus').querySelector('.nav');
+  let hed = document.querySelector('#plus').querySelector('.col-sm');
+  if (activePlus === '#plus-01'){  
+    plus.innerText = '04/04';
+    oldActive = activePlus;
+    activePlus ='#plus-04';
+    let hedline = document.querySelector(activePlus).children[2].innerText;
+    hed.querySelector('.hedline').innerText = hedline;
+    plusOn(activePlus,oldActive);
+    return
+  }
+  if (activePlus === '#plus-02'){  
+    plus.innerText = '01/04';
+    oldActive = activePlus;
+    activePlus ='#plus-01';
+    let hedline = document.querySelector(activePlus).children[2].innerText;
+    hed.querySelector('.hedline').innerText = hedline;
+    plusOn(activePlus,oldActive);
+    return
+  }
+  if (activePlus === '#plus-03'){  
+      plus.innerText = '02/04';
+      oldActive = activePlus;
+      activePlus ='#plus-02';
+      let hedline = document.querySelector(activePlus).children[2].innerText;
+      hed.querySelector('.hedline').innerText = hedline;
+      plusOn(activePlus,oldActive);
+      return
+    }
+  if (activePlus === '#plus-04'){  
+        plus.innerText = '03/04';
+        oldActive = activePlus;
+        activePlus ='#plus-03';
+        let hedline = document.querySelector(activePlus).children[2].innerText;
+        hed.querySelector('.hedline').innerText = hedline;
+        plusOn(activePlus,oldActive);
+        return
+      }
+}
+plusPrev.addEventListener('click', prevPlus);
+
+nextPlus = () => {
+  let plus = document.querySelector('#plus').querySelector('.nav');
+  let hed = document.querySelector('#plus').querySelector('.col-sm');
+  if (activePlus === '#plus-01'){  
+    plus.innerText = '02/04';
+    oldActive = activePlus;
+    activePlus ='#plus-02';
+    let hedline = document.querySelector(activePlus).children[2].innerText;
+    hed.querySelector('.hedline').innerText = hedline;
+    plusOn(activePlus,oldActive);
+    return
+  }
+  if (activePlus === '#plus-02'){  
+    plus.innerText = '03/04';
+    oldActive = activePlus;
+    activePlus ='#plus-03';
+    let hedline = document.querySelector(activePlus).children[2].innerText;
+    hed.querySelector('.hedline').innerText = hedline;
+    plusOn(activePlus,oldActive);
+    return
+  }
+  if (activePlus === '#plus-03'){  
+      plus.innerText = '04/04';
+      oldActive = activePlus;
+      activePlus ='#plus-04';
+      let hedline = document.querySelector(activePlus).children[2].innerText;
+      hed.querySelector('.hedline').innerText = hedline;
+      plusOn(activePlus,oldActive);
+      return
+    }
+  if (activePlus === '#plus-04'){  
+        plus.innerText = '01/04';
+        oldActive = activePlus;
+        activePlus ='#plus-01';
+        let hedline = document.querySelector(activePlus).children[2].innerText;
+        hed.querySelector('.hedline').innerText = hedline;
+        plusOn(activePlus,oldActive);
+        return
+      }
+}
+plusNext.addEventListener('click', nextPlus);
+
 
 

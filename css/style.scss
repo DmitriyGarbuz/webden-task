@@ -11,7 +11,7 @@ $colorVeryGrey: #5b5d60;
 body{
     background-color: $colorBack;
    }
-   .header{
+.header{
        .row{
            margin-right: 0px;
            margin-left: 0px;
@@ -177,7 +177,7 @@ body{
            }
        }
            }
-   }
+}
 
    .plus {
     background-color: $colorBack;
@@ -224,6 +224,9 @@ body{
         i{
             color: $colorBlue;
             line-height: 2rem; 
+            &:hover{
+                color: 'white'; 
+            }
         }
         .col-3{
             img{
